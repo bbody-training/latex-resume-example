@@ -9,7 +9,7 @@
 \setlength{\headheight}{12pt}   % make room for header
 \usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
-\lhead{\hspace*{-\sectionwidth}Brendon Body} % force lhead all the way left
+\lhead{\hspace*{-\sectionwidth}John Doe} % force lhead all the way left
 \rhead{Page \thepage}  % put page number at right
 \cfoot{}  % the footer is empty
 \pagestyle{fancy} % set pagestyle for the document
@@ -20,7 +20,7 @@
 \address{\textbf{Location:} My city, My state/province, My country}
 
 \begin{resume}
-\moveleft.5\sectionwidth\centerline{\textbf{Email:} \href{mailto:person@example.com}{person@example.com} \textbf{Website:} \href{www.example.com}{www.example.com}    \textbf{Phone:} (+12) 345 678 910} 
+	\input{Sections/Misc/contacts.tex}
 
 	\input{Sections/education.tex}
 
@@ -32,9 +32,9 @@
 
 	\input{Sections/projects.tex}
 
-	\input{Sections/skills.tex}
+	\input{Sections/Misc/skills.tex}
  
-	\input{Sections/references.tex}
+	\input{Sections/Misc/references.tex}
 
 \end{resume}
 \end{document}
